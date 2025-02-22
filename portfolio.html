@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Potfolio">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="Portfolio, Skills, Experiences">
+    <link rel="stylesheet" href="portfolio.css">
+    <!--link rel="stylesheet" href="layout/schriften.css"-->
+    <title>Portfolio Lam-Nghi Nguyen</title>
+  </head>
+
+  <body>
+
+	<!-- <header>
+	</header> -->
+	
+    <h1>Welcome to my Portfolio</h1><br>
+
+    <ul id="menu"> <!--ul: unordered list; ol: ordered list-->
+      <li><a href="#firstSkill">Videos</a> <!-- id hinterlegt: siehe h2 Ueberschriften; Hyperlinks zu den jeweiligen Ueberschriften-->
+      <li><a href="#secondSkill">Photos</a>
+      <li><a href="#thirdSkill">Layouts</a>
+      <li><a href="#forthSkill">Other</a>
+    </ul>
+
+    <img id="profilepic" src="material/photos/Bewerbungsfoto.jpg"><br><br><br>
+    <p>
+      Hi, I'm Lam-Nghi Nguyen and am glad to show you my skills in the following.
+      In my freetime I like to paint and work on ideas and little projects, so I consider myself a creative, patient and detail oriented Person.
+      I studied Media Science and Media Informatics at the University of Regensburg in Germany and graduated with a bachelor of arts degree in February 2025.
+    </p><br>
+
+  <main>
+  <h2 id="firstSkill">Videos</h2>
+    <p>
+      The first contact with video editing I made was at an internship at BMW. There I often worked with a greenscreen. I usually produced short videos for internal purposes. <br/>
+      While filming, I learnded the importance of audio and lights. So I gained the opportunity to learn about microphones and their orbitals as well as angles of lights and shadow.<br/>
+    </p>
+    <video src="material/videos/greenscreen.mp4" type="video/mp4" width="300"></video>
+    
+    <p>
+      During my academic studies I had a few video projects, 
+      which I produced with my fellow students based on a short made up story.
+      Like in this example, we studied the ways of Animation and created a Stop-Motion-Video using paper cutouts.
+      Afterwards I edited the raw materials in Adobe Premiere, adding backgrounds and music as well as sound effects.
+    </p>
+    <video src="material/videos/My_Stop_Motion_Movie_kleiner.mp4" width="300"></video>
+    <p>
+      On special holidays I often designed and animated little videos.
+      For my internship at BMW I created this spooky illustration for Halloween.
+    </p>
+    <video src="material/videos/Spoooky.mp4" width="300"></video>
+    <p>
+      Since I am very interested in animation, I was very happy that my academic course gave me the opportunity to expand my animation skills. 
+      Here is an example of a pixel animation for which we also had to prepare a sprite sheet.
+    </p>
+    <video src="material/videos/dino_walking.mp4" width="300"></video>
+
+    <h2 id= "secondSkill">Photos</h2>
+    <!-- Videos werden nicht abgespielt!-->
+      <p>
+        My interest in photography already started during my school time, where in 10th grade I had the opportunity to learn and experiment
+        in class about the fundamental settings of a DSLR camera as well as editing programs.
+      </p>
+      <section class="container">
+        <div class="container-wrapper">
+          <div class="slider">
+            <image id="slide-1" src="material/photos/IMG_0175.jpg" width="600"></image>
+            <image id="slide-2" src="material/photos/IMG_0444.JPG" width="400"></image>
+            <image id="slide-3" src="material/photos/IMG_0774_bearbeitet.jpg" width="400"></image>
+            <image id="slide-4" src="material/photos/puppet.png" width="300"></image> <!--Querformat bearbeiten!-->
+            <image id="slide-5" src="material/photos/cleanandrowdy.png" width="300"></image> <!--Querformat bearbeiten!-->
+          </div>
+        <!-- Navigation ist nicht an gewünschter Stelle
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+          </div>
+        -->
+        </div> 
+      </section>
+      
+      <p>
+        In a project seminar during my studies, I organized in a little group a photo exhibition with the concept of home.
+        We divided our tasks in photographer team, social media team, financial team, layout team, editorial team and photographer team.
+        I was part of the photographer and layout team. To truly capture the interpretation of home from my model, I did a empirical survey to learn more about her and her home.
+        The following photos as well as a short report shows her home and the meaning of sisterhood.
+        My contributions as a layout designer can be seen at <a href="#thirdSkill">Layouts</a>.
+      </p>
+      <section class="container">
+        <div class="container-wrapper">
+          <div class="slider">
+            <image id="pic1" src="material/photos/kitchen.png" width="175"></image>
+            <image id="pic2" src="material/photos/auch-unser-zu-Hause-ist-40x30.webp" width="285"></image>
+            <image id="pic3" src="material/photos/Abends-vor-dem-Fernseher-50x40.webp" width="240"></image>
+            <image id="pic4" src="material/photos/Es-ist-ein-Zufall-40x30.webp" width="255"></image> <br>
+            <image id="pic5" src="material/photos/Geschwisterplausch-50x40.webp" width="270"></image>
+            <image id="pic6" src="material/photos/dasHausInDemWirLeben.webp" width="255"></image>
+          </div>
+        <!-- Navigation ist nicht an gewünschter Stelle
+          <div class="slider-nav">
+            <a href="#pic1"></a>
+            <a href="#pic2"></a>
+            <a href="#pic3"></a>
+            <a href="#pic4"></a>
+            <a href="#pic5"></a>
+            <a href="#pic6"></a>
+          </div>
+        -->
+        </div>
+      </section>
+      <div class="wrapper">
+        <div class="collapsible">
+            <input type="checkbox" id="collapsible-head">
+          <label for="collapsible-head">Report on empirical study on the concept "home"</label>
+          <div class="collapsible-text">
+            <h3>At home is where the familiy is</h3>
+            <p>
+              If I must describe the word “home” or “homeland” in one word, the I would set it into relation with “at home”.<br>
+              “At home” is not necessarily a house, that has a roof and four walls around it, which stands at a specific spot, but it is about the people living with you.
+              It is more like a mere coincidence that there where everybody gathers frequently or there where you meet those people, you call family, the most frequent is in a house.
+              That is why I can say, if we go on a journey to an unknown location, I always take a little piece of home with me even though an unfamiliar feeling accompanies me.
+              “Not at home” is part of the term “home”.<br>
+              To explain in more detail, it means that you can only feel at home when you are not at home or have not been at home.
+              You must be able to return to a home for it to exist.
+              Therefore, meeting up with friends, for example, is an activity that takes place outside of being at home.
+              This shows that there are different groups of people who affect me in different ways.<br>
+              Activities outside the home differ from pastimes at home in terms of emotions, because being at home gives me mental peace,
+              i.e. home is a place of security and relaxation, where there is no criticism, judgment or condemnation and you are accepted as you are or want to be.
+              Many of my friends have already moved out, and one day I will too.<br>
+              The concept of home would develop in different directions, as there are different reasons.
+              If the move is due to studies, work, etc., for example, and this remains a limited or temporary period, this is seen as an activity outside the home, i.e. as a time that one must be away from home in order to define home as such, which at this point corresponds to the parental home here in Regensburg.
+              However, as soon as it is time to start a new life with a steady partner, a new family is founded, a new home is created, a new place to feel comfortable.
+              From this it can be concluded that the family is growing and so is the home, as the feelings are probably of equal importance.
+            </p>
+            <h3>A fusion of different values into a unique relationship</h3>
+            <p>
+              However, some characteristics will certainly be different than they are now.<br>
+              Simply because my parents experienced a different childhood, history and built a life in Germany under certain circumstances, the conditions and requirements for establishing a new home are different.
+              Many compromises were made, some of which were necessary to adapt to the different cultures, as my mother is half Russian and half Kazakh and belongs to the Protestant faith and my father is half Turkish and half Iraqi/Arab and follows the Islam.
+              For example, no pork is eaten in our household, as Islam forbids it, but at the same time Christianity has nothing against abstaining from pork.<br>
+              I identify as a German, mostly because of the language, the given mentalities and norms, but I also incorporate cultural aspects from Russia, Kazakhstan, Iraq and Turkey into my everyday life.
+              This also includes the food culture, like daily tea and rice are a must.<br>
+              Our eating habits have gone so far that the smell of rice has become our own odor, according to the observations of my friends.
+              As a result of numerous compromises, we have created a unique relationship with each other that is connected with unique feelings and thus defines home.
+              The answer "at home" to the question "What is home in one word?" may seem simple, but my "at home" is much more.<br><br>
+              Written from the perspective of Soja Lutfallah, from Lam-Nghi Nguyen
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <p>
+        During my time as a part of the communicationsteam in BMW Regensburg, I often took editorial photos.
+        Mostly they were for internal purposes like content creation for the application used by only workers.
+      </p>
+      <image src="material/photos/DSC_2118_FHD.jpg" width="500"></image>
+
+      <p>
+        At Infineon my main task was to assist organizing Innovationweek, which is an event where coworkers and researcher
+        have the opportunity to present their innovative ideas and projects using posters and prototypes.
+      </p>
+      <section class="container">
+        <div class="container-wrapper">
+          <div class="slider">
+            <image id="pic1" src="material/photos/infineon/DSC09635_ed.jpg" width="175"></image>
+            <image id="pic2" src="material/photos/infineon/innoweek (1).JPG" width="285"></image><!--verrutscht, in das richtige Format nachbearbeiten-->
+            <image id="pic3" src="material/photos/infineon/innoweek (2).JPG" width="240"></image>
+            <image id="pic4" src="material/photos/infineon/innoweek (3).JPG" width="255"></image>
+            <image id="pic5" src="material/photos/infineon/innoweek (4).JPG" width="270"></image>
+            <image id="pic6" src="material/photos/infineon/innoweek_DJI_0690_b.JPG" width="255"></image><!--verrutscht, in das richtige Format nachbearbeiten-->
+          </div>
+        </div>
+      </section>
+      <p>
+        Other than that I also often took part in other events like the mini cleanroom, which is a project to teach children about Infineon and the production of a microchip.
+      </p>
+      <section class="container">
+        <div class="container-wrapper">
+          <div class="slider">
+            <image id="pic1" src="material/photos/infineon/nachtschaftwissen (3).JPG" width="175"></image>
+            <image id="pic2" src="material/photos/infineon/minicleanroom (1).jpg" width="285"></image><!--verrutscht, in das richtige Format nachbearbeiten-->
+            <image id="pic3" src="material/photos/infineon/minicleanroom (2).jpg" width="240"></image>
+            <image id="pic4" src="material/photos/infineon/minicleanroom (3).jpg" width="255"></image> <br>
+            <image id="pic5" src="material/photos/infineon/nachtschaftwissen (1).JPG" width="270"></image>
+            <image id="pic6" src="material/photos/infineon/nachtschaftwissen (2).JPG" width="270"></image>
+          </div>
+        </div>
+      </section>
+
+      <p>
+        In my freetime I also enjoy creating fun pictiures like the following. 
+        The background as well as every cat photo were taken in greek on vacation and then put together. Can you find all the cats?
+      </p>
+      <image src="material/illustrations_layouts/Fertig_10.jpg" width="400"></image><br>
+
+
+    <h2 id= "thirdSkill">Layouts</h2>
+    <p>
+      Like I mentioned before, I was part of organizing a photo exhibition where I also played a part in the layout team. 
+      To promote our exhibition and inform our visitors we designed posters, flyer and invitation cads.
+      The flyer which can be seen on the third and fourth picture is a threefold flyer.
+    </p>
+    <section class="container">
+      <div class="container-wrapper">
+        <div class="slider">
+          <image src="material/illustrations_layouts/poster_two.png" width="360"></image>
+          <image src="material/illustrations_layouts/poster_one.png" width="350"></image>
+          <image src="material/illustrations_layouts/flyer_first_page.png" width="800"></image>
+          <image src="material/illustrations_layouts/flyer_second_page.png"width="800"></image><br>
+        </div>
+      </div>
+    </section>
+    <p>
+      I also had the opportunity to expand my illustration skills at BMW by creating infographics respecting the company's design guidelines,
+      which were mainly intended for employees.
+    </p>
+    <section class="container">
+      <div class="container-wrapper">
+        <div class="slider">
+           <image src="material/illustrations_layouts/infographic.png" width="600"></image>
+           <image src="material/illustrations_layouts/PXL_20241219_123434829.MP.jpg"></image>
+        </div>
+      </div>
+    </section>
+   
+    <p>
+      Furthermore, I designed at Infineon Wafer which can be engraved and used as unofficial presents for coworkers.
+    </p>
+    <section class="container">
+      <div class="container-wrapper">
+        <div class="slider">
+          <image src="material/illustrations_layouts/evolution board_schwarz_weiß.jpg" width="360"></image>
+          <image src="material/illustrations_layouts/Backup_of_Geschenkewafer dreiteilung.png" width="350"></image>
+          <image src="material/illustrations_layouts/Wafer_Roboterarm_.jpg" width="800"></image>
+          <image src="material/illustrations_layouts/Wafer_Roboterarm.jpg"width="800"></image><br>
+          <image src="material/illustrations_layouts/Wafer_Roboterarm_Hintergrund.jpg"></image><br>
+        </div>
+      </div>
+    </section>
+    <p>
+      In my freetime I designed a pricelist for my mothers nail business.
+    </p>
+
+    <h2 id= "forthSkill">Other</h2>
+      <p>
+        Since my focus during my BMW internship lay in media production, I was also in charge of the management of the internal infoscreens, which are operated with an internal software,
+        as well as the management of social media. Additional, with a fellow intern, we developed a concept for the <a href="https://www.instagram.com/p/CpU1vGTKYMN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">instagram</a>
+        channel of BMW Group Plant Regensburg and carry out its kick-off.
+      </p><br><br>
+
+      <p>
+        For the mini cleanroom project at Infineon I created quizzes for children of diffrent ages.
+        Because I was also part of these events, I could see how my quizzes got received and was able to develope based on that feedback the best versions.
+      </p>
+      <section class="container">
+        <div class="container-wrapper">
+          <div class="slider">
+            <image src="material/photos/quiz1.png" width="800"></image>
+            <image src="material/photos/quiz2.png" width="800"></image>
+            <image src="material/photos/quiz3.png" width="800"></image>
+          </div>
+        </div>
+      </section>
+      <br>
+
+      <p>
+        In addition to the photo exhibition, I also had the opportunity to organize the German Photo Book Prize,
+        which is an event that honors winners every two years with the best photo book in twelve different categories.
+      </p>
+      <section class="container">
+        <div class="container-wrapper">
+          <div class="slider">
+            <image src="material/photos/PXL_20240905_161508546.LONG_EXPOSURE-01.COVER.jpg"></image><!--Bildgröße anpassen-->
+            <image src="material/photos/PXL_20240904_112609544.jpg" width="800"></image>
+          </div>
+        </div>
+      </section>
+      <br>
+
+      <p>
+        Moreover, I worked in a group developing a prototype for a reading application, where books can be purchased and read.
+        Therefore we also learned about user guidelines and about use cases as well as conceive personas and more.
+      </p>
+      <video src="material/videos/HighFidelity Prototype.mp4" width="300"></video>
+      <video src="material/videos/Papierprototyp_1.mp4" width="300"></video>
+      <br>
+
+      <p>
+        I also acquired some basic HTML and CSS skills during my studies as well as freetime.
+      </p>
+    
+    <footer>
+      <time datetime="2019082019-08">last edited: February 2025</time>
+    </footer>
+   <!-- Man darf mehrere main Elemente einbauen, macht mehr Sinn, wenn man article als Elternelement nimmt
+    div style="height: 2000px;"> </div  wird nach unten gescrollt -->
+ 
+  </body>
+
+</html>

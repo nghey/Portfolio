@@ -1,0 +1,207 @@
+html {
+    box-sizing: border-box; /*braucht man in jeder html Datei*/
+    display: grid;
+    grid-template-columns: minmax(200px, 1200px); /*Breite soll niemals breiter sein als 1200px*/
+    justify-content: center;
+    background-color: rgb(131, 135, 102);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 90%;
+    line-height: 1.22; /*Zeilenabstand*/
+  }
+  
+  *,                  /*fĆ¼r das box-sizing; gehĆ¶rt in jede html Datei*/
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    /*margin: 20px 0px; /*AbkĆ¼rzung fĆ¼r margin: obenRechts untenLinks*/
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 15%;
+    box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.9);
+    border-radius: 4px; /*Abrundung der Ecken*/
+    padding-bottom: 20%;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 180%;
+    margin-top: 180px;
+  }
+
+  /*#menu {
+    font-size: larger;
+    text-align: left;
+    padding-left: 5%;
+  }*/
+
+  ul {
+    font-weight: bold;
+    padding-right: 200;
+  }
+
+  #profilepic {
+    margin: 0 0 0 20px;
+    width: 250px;
+    float: right; /*Text umgibt sich um das Bild und wird rechts angeordnet*/
+  }
+
+  h2 {
+    border-bottom: 3px solid rgb(131, 135, 102); /*Trennlinie unterhalb; hat keine Inhalt-trennende-Funktion*/
+    font-weight: 700; /*Dickegrad siehe runtergeladene woff2 Dateien*/
+    margin-right: -14%; /*kompletter Inhalt wird verschoben; geht hier, weil Ćberschrift nicht so lang ist; Strich geht fast bis zum Rand raus*/
+    margin-top: 30px;
+    font-size: 136%;
+  }
+
+  .container { /*Hier folgt der Bildslider:*/
+    padding: 2rem;
+  }
+  .sliderwrapper {
+    position: relative;
+    max-width: 48 rem;
+    margin: 0 auto;
+  }
+  .slider {
+    display: flex; /*bestimmt wie die Elemente angereiht werden (in diesem Fall horizontal nebeneinander)*/
+    aspect-ratio: 16/9; /*setzt die Elemente in dieses Format!*/
+    overflow: auto;
+    scroll-snap-type: x mandatory; /*stoppt je nach x Markierung der Elemente*/
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0,75rem hsla(0 0 0 0.25);
+    border-radius: 0.5rem;
+  }
+  .slider img {
+    flex: 1 0 100%; /*benutzen von flexbox -> flex: flexgrow(1=jedes Element wird auf die gleiche Größe gesetzt) flexshrink(0=Bild behält seine width) flexbases(100%=behält seine ursprüngöiche Größe zu 100% d.h.benutzt den kompletten parentcontainer)*/
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  /*.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;   position war zuvor relative (siehe .slidewarapper) und kann hier seine Relation finden: damit sie im Bild sind
+    bottom: -70rem;
+    left: 50%;            und die nächsten zwei Zeilen: damit Navigation in der Mitte ist und letzte Zeile: damit es am des Bildes, 1.5 rem über dem slider wrapper
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .slider-nav a {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 70%;   damit es Kreise werden
+    background-color: rgb(131, 135, 102);
+  }*/
+
+  .collapsible {
+    max-width: 750px;
+    overflow: hidden;
+    font-weight: 500;
+  }
+  .collapsible input {
+    display: none;
+  }
+  .collapsible label {
+    position: relative;
+    font-weight: 600;
+    background-color: rgb(131, 135, 102);
+    box-shadow: 0 5px 11px 0px rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.8);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 2px;
+    z-index: 1;
+  }
+  .collapsible label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 20px;
+    width: 18px;
+    height: 18px;
+    background: url(down-arrow.svg) no-repeat 0 0; /*!Pfeil nach unten wird nicht angezeigt*/
+    transition: all 0.3s ease;
+  }
+  .collapsible-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  .collapsible input:checked ~ .collapsible-text{
+    max-height: 1000px;
+    padding-bottom: 25px;
+    background-color: rgba(131, 135, 102, 0.571);
+    box-shadow: 0 5px 11px 0px rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    top: 0;
+    overflow: auto;
+  }
+  .collapsible-text h3 {
+    margin-bottom: 10px;
+    padding: 15px 25px 0;
+  }
+  .collapsible-text p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  p {
+    text-align: justify; /*Blocksatz*/
+    hyphens: auto; /*Silbentrennung*/
+  }
+
+  sup {
+    line-height: 0;
+    font-size: 80%;
+    vertical-align: 5px;
+  }
+
+  footer {
+    border-top: 1px solid black;
+    margin-top: 50%;
+  }
+  
+
+  @media (max-width: 920px){ /*falls das Element (siehe in media) weniger als 920px breit ist*/
+    body{ /*Operationen aus dem oberen body Element kopieren, alles was man nicht verĆ¤ndern will lĆ¶schen, alles andere hier Ć¤ndern*/
+      margin: 0px;
+      border-radius: 0px;
+      padding-left: 11%;
+      padding-right: 11%;
+    }
+    h2 {
+      border-bottom: none;
+      margin-right: initial;
+      font-size: 180%;
+      font-weight: bold;
+      color: grey;
+    }
+    ul {
+      margin-left: initial;
+    }
+    ul li { /*alle List items bzw. alle li in einem ul Elements*/
+      margin-top: 10px;
+    }
+
+    @media (max-width: 620px){
+      body{
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+      p {
+        text-align: left;
+        hyphens: none;
+      }
+      footer {
+        margin-right: 0;
+      }
+    }
+  }
